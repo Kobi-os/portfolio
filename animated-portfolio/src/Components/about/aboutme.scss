@@ -1,0 +1,74 @@
+
+
+
+.about {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg,#111132 ,#0c0c1d );
+    // height: calc(100vh - 100px);
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: center;
+        width: 550px;
+        height: 350px;
+        font-size: 21px;
+      }
+
+        .positions  {
+            display: flex;
+            gap: 40px;
+            font-size: 20px;
+
+          .skills {
+            display: inline-block;
+            position: relative;
+            color: white;
+            cursor: pointer;
+                  
+                }
+                  
+            .skills:after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: 
+                  #0087ca;
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+                  }
+                  
+            .skills:hover:after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+                  }
+      }
+      
+      .experiencesChapter {
+        height: 100px;
+
+
+       .experiences {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 13px;
+      }   
+      }
+    }
+}
