@@ -1,0 +1,15 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Przykład animacji - przesuwanie kursora */
+  .cursor.active {
+    transform: scale(1.5);
+  }
